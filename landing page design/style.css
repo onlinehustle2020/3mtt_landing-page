@@ -1,0 +1,323 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    padding: 0.8em 1.5em 0.8em 0;
+    background-color: black;
+    opacity: 0.8;
+    flex-wrap: wrap;
+}
+
+.nav_logo img {
+    margin-right: 1em;
+    padding: 5px;
+}
+
+.nav_content {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav_content li {
+    list-style-type: none;
+    padding: 0 2em 0 2em;
+}
+
+.nav_content a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 1.5em;
+}
+
+.nav_content a:hover {
+    color: #FFC222;
+}
+
+
+/**Body Customization**/
+.hero_section {
+    justify-items: center;
+}
+
+.hero_section h1 {
+    text-transform: capitalize;
+    font-family: 'Roboto';
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 2em;
+    text-align: center;
+    margin: 2em 0 0.5em 0;
+    
+}
+
+.hero_section p {
+    font-family: 'Montserrat';
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.cta_button  {
+    text-decoration: none;
+    color: black;
+    background-color: #FFC222;
+    border: 0.1em solid #FFC222;
+    border-radius: 1.5em;
+    padding: 0.5em;
+    font-size: 1.2em;
+    font-family: 'Roboto';
+}
+
+.cta_button span:hover {
+    color: white;
+}
+
+/**Product features**/
+.product_feature {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 6em 7em 6em 7em;
+}
+.feature {
+    padding: 1em 1em 0 1em;
+    margin: 0 1em 0 1em;
+    border: 1.2px solid black;
+    border-radius: 0.5em;
+    justify-items: center;
+    align-items: center;
+}
+.feature h2 {
+    font-family: 'Poppins';
+    font-size: 1em;
+    text-align: center;
+    margin: 0 0 0.5em 0;
+    padding-top: 0.5em;
+}
+.feature p {
+    font-family: 'Montserrat';
+    font-size: 0.8em; 
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+/* footer section */
+.contact_info {
+    background-color: black;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 0.7em;
+    gap: 15em;
+    padding: 4em 0 4em 0;
+}
+.contact_section {
+    margin: 3em 0 0 0;
+    align-self: center;
+}
+.phone_number {
+    display: flex;
+    gap: 0.2em;
+}
+.email {
+    display: flex;
+    gap: 0.2em;
+    padding-bottom: 20px;
+}
+.copy_write {
+    background-color: #079447;
+    display: flex;
+    padding: 1em;
+    align-items: center;
+    justify-content: center;
+    gap: 25em;
+}
+.social_links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 0.1em;
+}
+#footer_logo {
+    width: auto;
+    height: 40x;
+}
+.social_links i {
+    font-size: 16px;
+    transition: color 0.3 ease ;
+}
+.social_links i:hover {
+    color: black;
+}
+.copy_write_content p {
+    font-size: 12px;
+    font-family: 'Poppins';
+}
+.google_location iframe {
+        width: 350px;
+        height: 200px;
+}
+
+
+
+/* Media Queries */
+@media (max-width: 1024px) { /* Media sized screen (Tablets & small Laptops*/
+    .contact_info {
+        align-items: center;
+        font-size: 0.65em;
+        gap: 8em;
+    }
+    .copy_write {
+        padding: 1em;
+        gap: 20em;
+    }
+    .google_location iframe {
+        width: 300px;
+        height: 200px;
+    }
+     #footer_logo {
+        width: auto;
+        height: 35px;
+    }
+}
+
+@media (max-width: 768px) { /* Tablet portrait */
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+    }
+    .nav_logo img {
+        margin-right: 0.5em;
+        width: auto;
+        height: 30px;
+    }
+    .nav_content li {
+        padding: 0 1.5em 0 1.5em;
+    }
+    .nav_content a {
+        font-weight: 1em;
+        font-size: 0.7em;
+    }
+    .hero_section h1 {
+        font-size: 1.2em;   
+        align-items: center;
+        flex-wrap: wrap;   
+    }
+    .hero_section p {
+        font-size: 0.8em;
+        flex-wrap: wrap;
+    }
+
+    /* footer content */
+    .contact_info {
+        align-items: center;
+        font-size: 0.65em;
+        gap: 4em;
+    }
+    .copy_write {
+        padding: 1em;
+        gap: 12em;
+    }
+    .google_location iframe {
+        width: 300px;
+        height: 200px;
+    }
+    #footer_logo {
+        width: auto;
+        height: 25px;
+    }
+    .copy_write_content p {
+        font-size: 9px;
+    }
+    .social_links i {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) { /* Large Phones (Landscape Mode & Bigger Mobile Devices) */
+     .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+    }
+    .hero_section h1 {
+        font-size: 1.1em;   
+        align-items: center;
+        flex-wrap: wrap;   
+    }
+    .hero_section p {
+        font-size: 0.8em;
+        flex-wrap: wrap;
+    }
+
+    /* footer section */
+    .contact_info {
+        align-items: center;
+        font-size: 0.45em;
+        gap: 4em;
+        justify-content: center;
+        align-self: center;
+    }
+    .copy_write {
+        padding: 1em;
+        gap: 7em;
+    }
+    .google_location iframe {
+        width: 230px; 
+        height: 130px;
+    }
+    .copy_write_content p {
+        font-size: 8px;
+    }
+    .social_links i {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) { /* Small Phones (Portrait Mode - iPhone SE, older Andriods) */
+    .hero_section h1 {
+        font-size: 1em;   
+        align-items: center;
+        flex-wrap: wrap;   
+    }
+    .hero_section p {
+        font-size: 0.70em;
+        flex-wrap: wrap;
+    }
+    .contact_info {
+        gap: 3em;
+        justify-content: center;
+        align-self: center;
+    }
+    .google_location iframe {
+        width: 200px; 
+        height: 100px;
+    }   
+}
+
+
+
+
+
+
